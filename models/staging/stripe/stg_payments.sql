@@ -1,3 +1,3 @@
 select
     * 
-from "RAW"."STRIPE"."PAYMENT"
+from {{ source('stripe', 'payment') }}
